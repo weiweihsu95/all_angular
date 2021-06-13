@@ -1,0 +1,127 @@
+<div class = "unit group" id = "portfolio">
+  <h1 class = "title" >作品集 － <span class = "noLetterSpace">Portfolio</span></h1>
+  <hr class = "line">
+
+  <div class = "ui longer large modal" id = "portfolioModal">
+    <i class="close icon"></i>
+    <div class = "modalHead" id = "modalHead">TimeKeeper 智慧鬧鐘</div>
+    <div class = "scrolling image content">
+      <div class="ui image group" id = "slideImgDiv">
+        <div class = "container">
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 5</div>
+            <img  id = "slideImg-1" src="img/timekeeper-8.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img id = "slideImg-2" src="img/timekeeper-1.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+            <img id = "slideImg-3" src="img/timekeeper-2.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img id = "slideImg-4" src="img/timekeeper-3.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+            <img id = "slideImg-5" src="img/timekeeper-4.png" style="width:100%">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" id = "columImg-1" src="img/timekeeper-8.png" style="width:100%" onclick="currentSlide(1)" alt="三種模式可供選擇">
+            </div>
+            <div class="column">
+              <img class="demo cursor" id = "columImg-2" src="img/timekeeper-1.png" style="width:100%" onclick="currentSlide(2)" alt="系統首頁">
+            </div>
+            <div class="column">
+              <img class="demo cursor" id = "columImg-3" src="img/timekeeper-2.png" style="width:100%" onclick="currentSlide(3)" alt="好友頁面">
+            </div>
+            <div class="column">
+              <img class="demo cursor" id = "columImg-4" src="img/timekeeper-3.png" style="width:100%" onclick="currentSlide(4)" alt="加入好友頁面">
+            </div>
+            <div class="column">
+              <img class="demo cursor" id = "columImg-5" src="img/timekeeper-4.png" style="width:100%" onclick="currentSlide(5)" alt="個人資料頁面">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="description" id = "modalDescription">
+        <div class="ui header" id = "descriptionHead">結合AI、社群、Open Data的時間管家</div>
+      </div>
+    </div>
+    <div class="actions">
+      <div class="ui black deny button">
+        關閉
+      </div>
+    </div>
+  </div>
+
+  <div class = "colorBoxSet group">
+
+    <div class = "colorBox colorBoxColor-1" id = "timekeeperColorBox">
+      <div class = "ui violet right ribbon label">2017</div>
+      <div class = "circleImg">
+        <img src="data:image/svg+xml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTAgNTEwIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMCA1MTAiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PHBhdGggZD0ibTQ1MCAzNzVoLTYwbC0xMDUgMzAtMTMuMjUgMjcuMjUgMTMuMjUgMzIuNzVoNzVsMTUtMTAgMTUgMTBoNjBsMTAtNDV6IiBmaWxsPSIjZmY5MzZiIi8+PHBhdGggZD0ibTE1MCAzMDBoLTQ1LTQ1bC0xMCAzNy41IDEwIDM3LjUgODIuNSAxMCA4Mi41LTEwYzAtMjAuNjc4LTguNDExLTM5LjQyOC0yMS45OTItNTMuMDA4cy0zMi4zMy0yMS45OTItNTMuMDA4LTIxLjk5MnoiIGZpbGw9IiM4MDk1ZmYiLz48cGF0aCBkPSJtMjU1IDM3NWMtMTAuODIyIDAtMTg0LjE3OCAwLTE5NSAwdjkwaDE5NWwxMC00NXoiIGZpbGw9IiNmZmMxNzgiLz48cGF0aCBkPSJtNDUwIDE1MGgtNjBsLTEzLjMzMyAxMC0xNi42NjctMTBjLTguMDYgMC02My4zNzMgMC03NSAwbC0xOCA0NSAxOCA0NWg3NWwxNS4yNS0xMCAxNC43NSAxMGg2MGwxMC00NXoiIGZpbGw9IiNmZmMxNzgiLz48cGF0aCBkPSJtMTUwIDc1Yy0xMC44ODkgMC03OS4wNCAwLTkwIDAtMy40OTggMTMuMTE1LTYuNTAyIDI0LjM4NS0xMCAzNy41IDMuNDk4IDEzLjExNSA2LjUwMiAyNC4zODUgMTAgMzcuNSA4LjQ2NiAxLjIxIDYxLjQ3OCA4Ljc4MyA3MCAxMCAxNC41OTEtMS41MzYgODAuMDgyLTguNDMgOTUtMTAgMC00MS4zNTQtMzMuNjQ0LTc1LTc1LTc1eiIgZmlsbD0iIzljZiIvPjxwYXRoIGQ9Im0yNTUgMTUwYy0xMC44MjIgMC0xODQuMTc4IDAtMTk1IDAtMy4xNzkgMTUuNDE5LTYuODIxIDMzLjA4MS0xMCA0OC41IDMuNSAxNC41MjMgNi41IDI2Ljk3NyAxMCA0MS41aDE5NWwxMC00NXoiIGZpbGw9IiNmZmUyNzgiLz48cGF0aCBkPSJtNjAgNTEwYy03LjI1OSAwLTUyLjY5MyAwLTYwIDAgMC0xNC4zODUgMC00OTUuNjE1IDAtNTEwaDYweiIgZmlsbD0iI2NjODE1YyIvPjxwYXRoIGQ9Im01MTAgNTEwYy03LjI1OSAwLTUyLjY5MyAwLTYwIDAgMC0xMS44NDcgMC00MDguMTUzIDAtNDIwaDYweiIgZmlsbD0iI2E2NjM0MiIvPjxwYXRoIGQ9Im0zNjAgMTUwdjQ1Yy0yMC4xOTQgMC02My4yMzYgMC03NSAwIDAtMTQuOTgxIDAtMzAuMDE5IDAtNDUtMTAuNDkyIDAtMTkuNTA4IDAtMzAgMHYzNjBoMzBjMC0yOC4yNzggMC04OC41MjcgMC0xMDVoNzV2MTA1aDMwYzAtMTAuMTU3IDAtMzQ5Ljg0OSAwLTM2MC0xMC40OTIgMC0xOS41MDggMC0zMCAwem0wIDc1djMwYy0yMC4xOTQgMC02My4yMzYgMC03NSAwIDAtMTAuNDkyIDAtMTkuNTA4IDAtMzB6bTAgNjB2MzBjLTIwLjE5NCAwLTYzLjIzNiAwLTc1IDAgMC0xMC40OTIgMC0xOS41MDggMC0zMHptLTc1IDkwYzAtMTAuNDkyIDAtMTkuNTA4IDAtMzBoNzV2MzBjLTIwLjE5NCAwLTYzLjIzNiAwLTc1IDB6IiBmaWxsPSIjNWM2YzkzIi8+PC9nPjwvc3ZnPg==" />
+      </div>
+      <div class = "colorBoxContent">
+        <h4>歐趴大學宿舍網</h4>
+        <div>PHP</div>
+        <div>MySQL</div>
+        <div>JavaScript</div>
+        <div>HTML</div>
+        <div>Semantic</div>
+        <div>
+          <a href="http://weiweihsu.22web.org/?i=1">歐趴大學</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class = "colorBox colorBoxColor-3" id = "lxmlDcardColorBox">
+      <div class = "ui brown right ribbon label">2019</div>
+      <div class = "circleImg">
+        <img src = "https://upload.wikimedia.org/wikipedia/commons/f/f8/Dcard_Favicon_x520.png">
+      </div>
+      <div class = "colorBoxContent">
+        <h4>Dcard 文章關鍵字熱度爬蟲</h4>
+        <div>Python</div>
+        <div>lxml</div>
+        <div>Web Crawler</div>
+      </div>
+    </div>
+
+    <div class = "colorBox colorBoxColor-4" id = "busColorBox">
+      <div class = "ui pink right ribbon label">2018</div>
+      <div class = "circleImg">
+        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNDk2LjQ4NSA0OTYuNDg1IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0OTYuNDg1IDQ5Ni40ODU7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiM0NTQ1NDU7IiBkPSJNNzkuMDE5LDQ0NS42NDJ2MzUuMzI4YzAsOC41NjQsNi45NTEsMTUuNTE1LDE1LjUxNSwxNS41MTVoNDkuNDc4DQoJCWM4LjU2NCwwLDE1LjUxNS02Ljk1MSwxNS41MTUtMTUuNTE1di0zNS4zMjhINzkuMDE5eiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiM0NTQ1NDU7IiBkPSJNMzM2Ljk1OCw0NDUuNjQydjM1LjMyOGMwLDguNTY0LDYuOTUxLDE1LjUxNSwxNS41MTUsMTUuNTE1aDQ5LjQ3OA0KCQljOC41NjQsMCwxNS41MTUtNi45NTEsMTUuNTE1LTE1LjUxNXYtMzUuMzI4SDMzNi45NTh6Ii8+DQo8L2c+DQo8cGF0aCBzdHlsZT0iZmlsbDojQ0FDQUNBOyIgZD0iTTQ4Mi41NTIsMTI4LjQxOWMtNC40NTMsMC04LjA1Mi0zLjYtOC4wNTItOC4wNTJjMC01LjY5NC00LjYzOS0xMC4zMTgtMTAuMzE4LTEwLjMxOGgtOC44NDQNCgljLTQuNDUzLDAtOC4wNTItMy42LTguMDUyLTguMDUyczMuNi04LjA1Miw4LjA1Mi04LjA1Mmg4Ljg0NGMxNC41NjksMCwyNi40MjIsMTEuODU0LDI2LjQyMiwyNi40MDcNCglDNDkwLjYwNSwxMjQuODA0LDQ4Ny4wMDUsMTI4LjQxOSw0ODIuNTUyLDEyOC40MTl6Ii8+DQo8cmVjdCB4PSI0NjMuNjg2IiB5PSIxMTguOTM5IiBzdHlsZT0iZmlsbDojNkY2RjZGOyIgd2lkdGg9IjMyLjMwMyIgaGVpZ2h0PSI4Ny4yMjYiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiNDQUNBQ0E7IiBkPSJNMTMuOTMzLDEyOC40MTljNC40NTMsMCw4LjA1Mi0zLjYsOC4wNTItOC4wNTJjMC01LjY5NCw0LjYyNC0xMC4zMTgsMTAuMzE4LTEwLjMxOGg4Ljg0NA0KCWM0LjQ1MywwLDguMDUyLTMuNiw4LjA1Mi04LjA1MnMtMy42LTguMDUyLTguMDUyLTguMDUyaC04Ljg0NGMtMTQuNTY5LDAtMjYuNDIyLDExLjg1NC0yNi40MjIsMjYuNDA3DQoJQzUuODgsMTI0LjgwNCw5LjQ4LDEyOC40MTksMTMuOTMzLDEyOC40MTl6Ii8+DQo8cmVjdCB4PSIwLjQ5NiIgeT0iMTE4LjkzOSIgc3R5bGU9ImZpbGw6IzZGNkY2RjsiIHdpZHRoPSIzMi4zMDMiIGhlaWdodD0iODcuMjI2Ii8+DQo8cGF0aCBzdHlsZT0iZmlsbDojODZEQUYxOyIgZD0iTTQyNC42ODEsMEg3MS44MDRjLTE3LjEyOSwwLTMxLjAzLDEzLjg4Ni0zMS4wMywzMS4wM3YyNzkuMDg3aDQxNC45MzdWMzEuMDMNCglDNDU1LjcxMSwxMy44ODYsNDQxLjgyNSwwLDQyNC42ODEsMHoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiNFRDYyNjI7IiBkPSJNNDAuNzc0LDQxMS44NXY4LjUzM2MwLDE3LjEyOSwxMy45MDIsMzEuMDMsMzEuMDMsMzEuMDNoMzUyLjg3N2MxNy4xNDQsMCwzMS4wMy0xMy45MDIsMzEuMDMtMzEuMDMNCgl2LTguNTMzSDQwLjc3NHoiLz4NCjxyZWN0IHg9IjQwLjc3NCIgeT0iMzY3LjI0NCIgc3R5bGU9ImZpbGw6I0NENDg0QjsiIHdpZHRoPSI0MTQuOTM3IiBoZWlnaHQ9IjQ0LjU0NCIvPg0KPHJlY3QgeD0iNDAuNzc0IiB5PSIzMDAuMTU2IiBzdHlsZT0iZmlsbDojRjNGM0YzOyIgd2lkdGg9IjQxNC45MzciIGhlaWdodD0iNjcuMTUiLz4NCjxyZWN0IHg9IjQwLjc3NCIgeT0iODYuODY5IiBzdHlsZT0iZmlsbDojNkY2RjZGOyIgd2lkdGg9IjQxNC45MzciIGhlaWdodD0iMTkzLjg5MyIvPg0KPHJlY3QgeD0iMjM3LjE2NSIgeT0iODYuODY5IiBzdHlsZT0iZmlsbDojNDU0NTQ1OyIgd2lkdGg9IjIyLjE1NiIgaGVpZ2h0PSIxOTMuODkzIi8+DQo8cmVjdCB4PSI0MC43NzQiIHk9IjI4MC43NjIiIHN0eWxlPSJmaWxsOiM4NkRBRjE7IiB3aWR0aD0iNDE0LjkzNyIgaGVpZ2h0PSIxOS4zOTQiLz4NCjxjaXJjbGUgc3R5bGU9ImZpbGw6I0YzRjNGMzsiIGN4PSI4NS40ODkiIGN5PSIzODkuNTciIHI9IjEyLjEzMyIvPg0KPGc+DQoJPGNpcmNsZSBzdHlsZT0iZmlsbDojRkZFMjFGOyIgY3g9IjExNi4zNjQiIGN5PSIzODkuNTciIHI9IjEyLjEzMyIvPg0KCTxjaXJjbGUgc3R5bGU9ImZpbGw6I0ZGRTIxRjsiIGN4PSIzODAuMTIxIiBjeT0iMzg5LjU3IiByPSIxMi4xMzMiLz4NCjwvZz4NCjxjaXJjbGUgc3R5bGU9ImZpbGw6I0YzRjNGMzsiIGN4PSI0MTAuOTY1IiBjeT0iMzg5LjU3IiByPSIxMi4xMzMiLz4NCjxnPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNGRkJENDk7IiBkPSJNNDExLjI0NSwzMTYuODY2aC0yOS43NDNjLTkuMzA5LDAtMTYuODY1LDcuNTU2LTE2Ljg2NSwxNi44NjVjMCw5LjMwOSw3LjU0LDE2Ljg0OSwxNi44NjUsMTYuODQ5DQoJCWgyOS43NDNjOS4zMDksMCwxNi44NjUtNy41NCwxNi44NjUtMTYuODQ5QzQyOC4wOTQsMzI0LjQyMiw0MjAuNTU0LDMxNi44NjYsNDExLjI0NSwzMTYuODY2eiIvPg0KCTxwYXRoIHN0eWxlPSJmaWxsOiNGRkJENDk7IiBkPSJNMTEyLjUxNiwzMTYuODY2SDgyLjc3M2MtOS4zMDksMC0xNi44NjUsNy41NTYtMTYuODY1LDE2Ljg2NWMwLDkuMzA5LDcuNTQsMTYuODQ5LDE2Ljg2NSwxNi44NDkNCgkJaDI5Ljc0M2M5LjMwOSwwLDE2Ljg0OS03LjU0LDE2Ljg0OS0xNi44NDlDMTI5LjM4MSwzMjQuNDIyLDEyMS44MjUsMzE2Ljg2NiwxMTIuNTE2LDMxNi44NjZ6Ii8+DQo8L2c+DQo8cGF0aCBzdHlsZT0iZmlsbDojNDU0NTQ1OyIgZD0iTTM2Ni40ODMsMTMuNTQ1SDEyMS4yNjZjLTE2LjUwOCwwLTI5Ljg4MiwxMy4zNzQtMjkuODgyLDI5Ljg4MnMxMy4zNzQsMjkuODk4LDI5Ljg4MiwyOS44OThoMjQ1LjIxNw0KCWMxNi41MDgsMCwyOS44ODItMTMuMzc0LDI5Ljg4Mi0yOS44OThDMzk2LjM2NiwyNi45MzQsMzgyLjk5MiwxMy41NDUsMzY2LjQ4MywxMy41NDV6Ii8+DQo8cGF0aCBzdHlsZT0ib3BhY2l0eTowLjE7ZmlsbDojRkZGRkZGO2VuYWJsZS1iYWNrZ3JvdW5kOm5ldyAgICA7IiBkPSJNNDU1LjcxMSw4Ni44NjlINDAuNzc0djkzLjk2DQoJYzAsOC44NTksNi43OCwxNi45NTgsMTUuODI1LDE3LjMzYzkuNDE4LDAuNTc0LDE3LjMzLTYuOTY2LDE3LjMzLTE2LjM4NHYtMzAuMzk0YzAtNy45MTMsNi41OTQtMTMuOTMzLDE0LjY5My0xMy43NDYNCgljMCwwLDAsMCwwLjE4NiwwYzAsMCwwLDAsMC4xODYsMGM3LjkxMy0wLjE4NiwxNC42OTMsNS44MzQsMTQuNjkzLDEzLjc0NnYzMy41OWMwLDkuMDQ1LDYuNTk0LDE2Ljk1OCwxNS40MzgsMTcuNTE3DQoJYzkuNDQ5LDAuMzcyLDE3LjE3NS02LjkzNSwxNy40MjQtMTYuMTM2di00NC44N2MwLTkuNDMzLDcuODM1LTE2Ljk1OCwxNy4zNzctMTYuNTM5YzguOTA2LDAuNTI4LDE1LjU3Nyw4LjQ4NywxNS41NzcsMTcuMzc3djQyLjg1Mw0KCWMwLjI2NCw4LjY0Miw2Ljg1OCwxNi4yNzUsMTUuNTQ2LDE2LjgzNGM5LjYwNCwwLjM3MiwxNy4zMy03LjE1MiwxNy4zMy0xNi41N2wwLjE4Ni0zNi41MDdjMC05LjQxOCw3LjcyNy0xNi45NTgsMTcuMzMtMTYuNTg2DQoJYzguODU5LDAuNTU5LDE1LjYzOSw4LjQ3MSwxNS42MzksMTcuNTE3djM5LjUxN2MwLjE4Niw4Ljg1OSw3LjU0LDE2LjAxMiwxNi4zODQsMTYuMDEyYzkuMjMyLDAsMTYuNTctNy41NCwxNi41Ny0xNi41N3YtNDcuMDczDQoJYzAtNy4xNjgsNS4zMjItMTMuNzQ2LDE1LjA2NS0xMy43NDZjNy41NC0wLjU1OSwxMy45MzMsNS42NDgsMTMuOTMzLDEzLjAwMnY0Ni4wNjRjMCw5LjA0NSw2LjU5NCwxNi45NDMsMTUuNDUzLDE3LjUxNw0KCWM5LjYwNCwwLjM3MiwxNy41MTctNy4xNTIsMTcuNTE3LTE2LjU3di0zNC4zNTFjMC03LjE5OSw1LjM2OC0xMy43NDYsMTQuODc5LTEzLjc0NmM4LjA5OSwwLDE0LjY5Myw2LjU5NCwxNC42OTMsMTQuNTA3djI2LjQzOA0KCWMwLDguODU5LDYuNzgsMTYuOTU4LDE1LjYzOSwxNy4zM2M5LjQxOCwwLjU3NCwxNy41MTctNi45NjYsMTcuNTE3LTE2LjM4NHYtMzAuMzk0YzAtNy45MTMsNi41OTQtMTMuOTMzLDE0LjUwNy0xMy43NDYNCgljMC4xODYsMCwwLjE4NiwwLDAuMTg2LDBjMC4xODYsMCwwLjE4NiwwLDAuMzcyLDBjNy45MTMtMC4xODYsMTQuNTA3LDUuODM0LDE0LjUwNywxMy43NDZ2MzMuNTljMCw5LjA0NSw2Ljc4LDE2Ljk1OCwxNS42MzksMTcuNTE3DQoJYzkuNjA0LDAuMzcyLDE3LjMzLTcuMTY4LDE3LjMzLTE2LjU4NlY4Ni44NjlINDU1LjcxMXoiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K" />
+      </div>
+      <div class = "colorBoxContent">
+        <h4>高雄老司機</h4>
+        <div>Html</div>
+        <div>CSS</div>
+        <div>Javascript</div>
+        <div>Open data</div>
+        <div>
+          <a href="http://webclass.22web.org/BusApp/">高雄老司機</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
